@@ -14,10 +14,10 @@ echo "Installing build-essential"
 sudo apt-get install build-essential
 echo " "
 echo "Configure CpuMiner"
-./autogen.sh
-CFLAGS="-march=native" ./configure
-make
-make install
+sudo sh ./autogen.sh
+sudo CFLAGS="-march=native" ./configure
+sudo make
+sudo make install
 
 echo " "
 echo "** Configuring CpuMiner done."
