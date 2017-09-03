@@ -8,12 +8,12 @@ sudo apt-get update
 echo " "
 echo "Installing libcurl4"
 sudo apt-get install libcurl4-openssl-dev git
+sudo apt-get install autotools-dev autoconf libcurl4-gnutls-dev
 echo " "
 echo "Installing build-essential"
 sudo apt-get install build-essential
 echo " "
 echo "Configure CpuMiner"
-cd cpuminer
 ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
